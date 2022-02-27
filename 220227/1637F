@@ -1,0 +1,58 @@
+
+[34m    F. Towers[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given a tree with n vertices numbered from 1 to n. The height of the i-th vertex is h_i. You can place any number of towers into vertices, foreach tower you can choose which vertex to put it in, as well as choose its efficiency. Setting up a tower with efficiency e costs e coins, where e >0.
+[0m
+    It is considered that a vertex x gets a signal if for some pair of towers at the vertices u and v (u ≠v, but it is allowed that x = u or x = v)with efficiencies e_u and e_v, respectively, it is satisfied that min(e_u, e_v) ≥h_x and x lies on the path between u and v.
+[0m
+    Find the minimum number of coins required to set up towers so that you can get a signal at all vertices.
+[0m
+[34m    Input:
+[0m
+    The first line contains an integer n (2 ≤n ≤200 000) — the number of vertices in the tree.
+[0m
+    The second line contains n integers h_i (1 ≤h_i ≤10^9) — the heights of the vertices.
+[0m
+    Each of the next n - 1 lines contain a pair of numbers v_i, u_i (1 ≤v_i, u_i ≤n) — an edge of the tree. It is guaranteed that the given edgesform a tree.
+[0m
+[34m    Output:
+[0m
+    Print one integer — the minimum required number of coins.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 3
+	 1 2 1
+	 1 2
+	 2 3
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 4[0m
+[34m    Sample Input 1:[0m
+[36m    
+	 5
+	 1 3 3 1 3
+	 1 3
+	 5 4
+	 4 3
+	 2 3
+	 [0m
+[34m    Sample Output 1:[0m
+[32m    
+	 7[0m
+[34m    Sample Input 2:[0m
+[36m    
+	 2
+	 6 1
+	 1 2
+	 [0m
+[34m    Sample Output 2:[0m
+[32m    
+	 12[0m
+

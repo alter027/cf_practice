@@ -1,0 +1,60 @@
+
+[34m    D. Flipping Range[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given an array a of n integers and a set B of m positive integers such that 1 ≤b_i ≤⌊n/2 ⌋for 1≤i≤m, whereb_i is the i-th element of B.
+[0m
+    You can make the following operation on a:
+[0m
+     Select some x such that x appears in B.
+[0m
+     Select an interval from array a of size x and multiply by -1 every element in the interval. Formally, select l and r such that 1≤l≤r ≤nand r-l+1=x, then assign a_i:=-a_i for every i such that l≤i≤r.
+[0m
+    Consider the following example, let a=[0,6,-2,1,-4,5] and B={1,2}:
+[0m
+     [0,6,-2,-1,4,5] is obtained after choosing size 2 and l=4, r=5.
+[0m
+     [0,6,2,-1,4,5] is obtained after choosing size 1 and l=3, r=3.
+[0m
+    Find the maximum ∑_i=1^n a_i you can get after applying such operation any number of times (possibly zero).
+[0m
+[34m    Input:
+[0m
+    The input consists of multiple test cases. The first line contains a single integer t (1 ≤t ≤10^5) — the number of test cases. Description ofthe test cases follows.
+[0m
+    The first line of each test case contains two integers n and m (2≤n ≤10^6, 1 ≤m ≤⌊n/2 ⌋) — the number of elementsof a and B respectively.
+[0m
+    The second line of each test case contains n integers a_1,a_2,…,a_n (-10^9≤a_i ≤10^9).
+[0m
+    The third line of each test case contains m distinct positive integers b_1,b_2,…,b_m (1 ≤b_i ≤⌊n/2 ⌋) — the elementsin the set B.
+[0m
+    It's guaranteed that the sum of n over all test cases does not exceed 10^6.
+[0m
+[34m    Output:
+[0m
+    For each test case print a single integer — the maximum possible sum of all a_i after applying such operation any number of times.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 3
+	 6 2
+	 0 6 -2 1 -4 5
+	 1 2
+	 7 1
+	 1 -1 1 -1 1 -1 1
+	 2
+	 5 1
+	 -1000000000 -1000000000 -1000000000 -1000000000 -1000000000
+	 1
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 18
+	 5
+	 5000000000
+	 [0m
+

@@ -1,0 +1,52 @@
+
+[34m    D. Yet Another Minimization Problem[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given two arrays a and b, both of length n.
+[0m
+    You can perform the following operation any number of times (possibly zero): select an index i (1 ≤i ≤n) and swap a_i and b_i.
+[0m
+    Let's define the cost of the array a as ∑_i=1^n ∑_j=i + 1^n (a_i + a_j)^2. Similarly, the cost of the array b is ∑_i=1^n∑_j=i + 1^n (b_i + b_j)^2.
+[0m
+    Your task is to minimize the total cost of two arrays.
+[0m
+[34m    Input:
+[0m
+    Each test case consists of several test cases. The first line contains a single integer t (1 ≤t ≤40) — the number of test cases. The followingis a description of the input data sets.
+[0m
+    The first line of each test case contains an integer n (1 ≤n ≤100) — the length of both arrays.
+[0m
+    The second line of each test case contains n integers a_1, a_2, …, a_n (1 ≤a_i ≤100) — elements of the first array.
+[0m
+    The third line of each test case contains n integers b_1, b_2, …, b_n (1 ≤b_i ≤100) — elements of the second array.
+[0m
+    It is guaranteed that the sum of n over all test cases does not exceed 100.
+[0m
+[34m    Output:
+[0m
+    For each test case, print the minimum possible total cost.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 3
+	 1
+	 3
+	 6
+	 4
+	 3 6 6 6
+	 2 7 4 1
+	 4
+	 6 7 2 4
+	 2 5 3 5
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 0
+	 987
+	 914
+	 [0m
+

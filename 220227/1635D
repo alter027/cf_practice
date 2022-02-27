@@ -1,0 +1,62 @@
+
+[34m    D. Infinite Set[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given an array a consisting of n distinct positive integers.
+[0m
+    Let's consider an infinite integer set S which contains all integers x that satisfy at least one of the following conditions:
+[0m
+     x = a_i for some 1 ≤i ≤n.
+[0m
+     x = 2y + 1 and y is in S.
+[0m
+     x = 4y and y is in S.
+[0m
+    For example, if a = [1,2] then the 10 smallest elements in S will be {1,2,3,4,5,7,8,9,11,12}.
+[0m
+    Find the number of elements in S that are strictly smaller than 2^p. Since this number may be too large, print it modulo 10^9 + 7.
+[0m
+[34m    Input:
+[0m
+    The first line contains two integers n and p (1 ≤n, p ≤2 ·10^5).
+[0m
+    The second line contains n integers a_1,a_2,…,a_n (1 ≤a_i ≤10^9).
+[0m
+    It is guaranteed that all the numbers in a are distinct.
+[0m
+[34m    Output:
+[0m
+    Print a single integer, the number of elements in S that are strictly smaller than 2^p. Remember to print it modulo 10^9 + 7.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 2 4
+	 6 1
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 9
+	 [0m
+[34m    Sample Input 1:[0m
+[36m    
+	 4 7
+	 20 39 5 200
+	 [0m
+[34m    Sample Output 1:[0m
+[32m    
+	 14
+	 [0m
+[34m    Sample Input 2:[0m
+[36m    
+	 2 200000
+	 48763 1000000000
+	 [0m
+[34m    Sample Output 2:[0m
+[32m    
+	 448201910
+	 [0m
+

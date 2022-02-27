@@ -1,0 +1,46 @@
+
+[34m    C. Paint the Middle[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given n elements numbered from 1 to n, the element i has value a_i and color c_i, initially, c_i = 0 for all i.
+[0m
+    The following operation can be applied:
+[0m
+     Select three elements i, j and k (1 ≤i < j < k ≤n), such that c_i, c_j and c_k are all equal to 0 and a_i = a_k, then set c_j = 1.
+[0m
+    Find the maximum value of ∑_i=1^nc_i that can be obtained after applying the given operation any number of times.
+[0m
+[34m    Input:
+[0m
+    The first line contains an integer n (3 ≤n ≤2 ·10^5) — the number of elements.
+[0m
+    The second line consists of n integers a_1, a_2, …, a_n (1 ≤a_i ≤n), where a_i is the value of the i-th element.
+[0m
+[34m    Output:
+[0m
+    Print a single integer in a line — the maximum value of ∑_i=1^nc_i that can be obtained after applying the given operation any number of
+	times.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 7
+	 1 2 1 2 7 4 7
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 2
+	 [0m
+[34m    Sample Input 1:[0m
+[36m    
+	 13
+	 1 2 3 2 1 3 3 4 5 5 5 4 7
+	 [0m
+[34m    Sample Output 1:[0m
+[32m    
+	 7
+	 [0m
+

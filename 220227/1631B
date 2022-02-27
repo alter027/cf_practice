@@ -1,0 +1,54 @@
+
+[34m    B. Fun with Even Subarrays[0m
+[34m    Time: [0m[35m1 second[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You are given an array a of n elements. You can apply the following operation to it any number of times:
+[0m
+     Select some subarray from a of even size 2k that begins at position l (1≤l ≤l+2·k-1≤n, k ≥1) and for each i between 0 and k-1(inclusive), assign the value a_l+k+i to a_l+i.
+[0m
+    For example, if a = [2, 1, 3, 4, 5, 3], then choose l = 1 and k = 2, applying this operation the array will become a = [3, 4, 3, 4, 5, 3].
+[0m
+    Find the minimum number of operations (possibly zero) needed to make all the elements of the array equal.
+[0m
+[34m    Input:
+[0m
+    The input consists of multiple test cases. The first line contains a single integer t (1 ≤t ≤2 ·10^4) — the number of test cases.Description of the test cases follows.
+[0m
+    The first line of each test case contains an integer n (1 ≤n ≤2 ·10^5) — the length of the array.
+[0m
+    The second line of each test case consists of n integers a_1, a_2, …, a_n (1 ≤a_i ≤n) — the elements of the array a.
+[0m
+    It is guaranteed that the sum of n over all test cases does not exceed 2 ·10^5.
+[0m
+[34m    Output:
+[0m
+    Print t lines, each line containing the answer to the corresponding test case — the minimum number of operations needed to make equal all the elements
+	of the array with the given operation.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 5
+	 3
+	 1 1 1
+	 2
+	 2 1
+	 5
+	 4 4 4 2 4
+	 4
+	 4 2 1 3
+	 1
+	 1
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 0
+	 1
+	 1
+	 2
+	 0
+	 [0m
+

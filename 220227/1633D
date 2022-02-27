@@ -1,0 +1,54 @@
+
+[34m    D. Make Them Equal[0m
+[34m    Time: [0m[35m2 seconds[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    You have an array of integers a of size n. Initially, all elements of the array are equal to 1. You can perform the following operation: choose twointegers i (1 ≤i ≤n) and x (x > 0), and then increase the value of a_i by ⌊a_i/x⌋(i.e. make a_i = a_i +⌊a_i/x⌋).
+[0m
+    After performing all operations, you will receive c_i coins for all such i that a_i = b_i.
+[0m
+    Your task is to determine the maximum number of coins that you can receive by performing no more than k operations.
+[0m
+[34m    Input:
+[0m
+    The first line contains a single integer t (1 ≤t ≤100) — the number of test cases.
+[0m
+    The first line of each test case contains two integers n and k (1 ≤n ≤10^3; 0 ≤k ≤10^6) — the size of the array and the maximum number ofoperations, respectively.
+[0m
+    The second line contains n integers b_1, b_2, …, b_n (1 ≤b_i ≤10^3).
+[0m
+    The third line contains n integers c_1, c_2, …, c_n (1 ≤c_i ≤10^6).
+[0m
+    The sum of n over all test cases does not exceed 10^3.
+[0m
+[34m    Output:
+[0m
+    For each test case, print one integer — the maximum number of coins that you can get by performing no more than k operations.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 4
+	 4 4
+	 1 7 5 2
+	 2 6 5 2
+	 3 0
+	 3 5 2
+	 5 4 7
+	 5 9
+	 5 2 5 6 3
+	 5 9 1 9 7
+	 6 14
+	 11 4 6 2 8 16
+	 43 45 9 41 15 38
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 9
+	 0
+	 30
+	 167
+	 [0m
+

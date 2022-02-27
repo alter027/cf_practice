@@ -1,0 +1,50 @@
+
+[34m    B. MEX and Array[0m
+[34m    Time: [0m[35m1 second[0m
+[34m    Memory: [0m[35m256 megabytes[0m
+
+
+[34m    Problem Statement:
+[0m
+    Let there be an array b_1, b_2, …, b_k. Let there be a partition of this array into segments [l_1; r_1], [l_2; r_2], …, [l_c; r_c], wherel_1 = 1, r_c = k, and for any 2 ≤i ≤c holds that r_i-1 + 1 = l_i. In other words, each element of the array belongs to exactly one segment.
+[0m
+    Let's define the cost of a partition as c + ∑_i = 1^c mex({b_l_i, b_l_i + 1, …, b_r_i}), where mexof a set of numbers S is the smallest non-negative integer that does not occur in the set S. In other words, the cost of a partition is the number ofsegments plus the sum of MEX over all segments. Let's define the value of an array b_1, b_2, …, b_k as the maximum possible cost over allpartitions of this array.
+[0m
+    You are given an array a of size n. Find the sum of values of all its subsegments.
+[0m
+    An array x is a subsegment of an array y if x can be obtained from y by deletion of several (possibly, zero or all) elements from the beginning andseveral (possibly, zero or all) elements from the end.
+[0m
+[34m    Input:
+[0m
+    The input contains several test cases. The first line contains one integer t (1 ≤t ≤30) — the number of test cases.
+[0m
+    The first line for each test case contains one integer n (1 ≤n ≤100) — the length of the array.
+[0m
+    The second line contains a sequence of integers a_1, a_2, …, a_n (0 ≤a_i ≤10^9) — the array elements.
+[0m
+    It is guaranteed that the sum of the values n over all test cases does not exceed 100.
+[0m
+[34m    Output:
+[0m
+    For each test case print a single integer — the answer to the problem.
+[0m
+[34m    Sample Input 0:[0m
+[36m    
+	 4
+	 2
+	 1 2
+	 3
+	 2 0 1
+	 4
+	 2 0 5 1
+	 5
+	 0 1 1 0 1
+	 [0m
+[34m    Sample Output 0:[0m
+[32m    
+	 4
+	 14
+	 26
+	 48
+	 [0m
+
